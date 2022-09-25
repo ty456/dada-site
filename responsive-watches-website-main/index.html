@@ -1,0 +1,605 @@
+ <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--=============== SWIPER CSS ===============--> 
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive watches website - Bedimcode</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                     </i> রাজু দাদার পাঠশালা
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">হোম</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#featured" class="nav__link">দাদার কোর্সসমূহ</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">About রাজু দাদা</a>
+                        </li>
+                         
+                         
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class='bx bx-x' ></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                    <div class="nav__shop" id="cart-shop">
+                        <i class='bx bx-shopping-bag' ></i>
+                    </div>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class='bx bx-grid-alt' ></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== CART ====================-->
+        <div class="cart" id="cart">
+            <i class='bx bx-x cart__close' id="cart-close"></i>
+
+            <h2 class="cart__title-center">My Cart</h2>
+
+            <div class="cart__container">
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/featured1.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Jazzmaster</h3>
+                        <span class="cart__price">$1050</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/featured3.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Rose Gold</h3>
+                        <span class="cart__price">$850</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="cart__card">
+                    <div class="cart__box">
+                        <img src="assets/img/new1.png" alt="" class="cart__img">
+                    </div>
+
+                    <div class="cart__details">
+                        <h3 class="cart__title">Longines Rose</h3>
+                        <span class="cart__price">$980</span>
+
+                        <div class="cart__amount">
+                            <div class="cart__amount-content">
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-minus' ></i>
+                                </span>
+
+                                <span class="cart__amount-number">1</span>
+
+                                <span class="cart__amount-box">
+                                    <i class='bx bx-plus' ></i>
+                                </span>
+                            </div>
+
+                            <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="cart__prices">
+                <span class="cart__prices-item">3 items</span>
+                <span class="cart__prices-total">$2880</span>
+            </div>
+        </div>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                     
+                     <div class="home__img-bg">
+                         <img src="assets/img/raju dada.jpg" alt="" width="100%">
+                     </div>
+    
+                    <div class="home__social">
+                        <a href="https://www.facebook.com/groups/188504134988507/" target="_blank" class="home__social-link">
+                            Facebook
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCXKUnqFb0nR_ZxsZ3b4i-OQ" target="_blank" class="home__social-link">
+                            youtube
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                            Instagram
+                        </a>
+                    </div>
+    
+                    <div class="home__data">
+                        <h1 class="home__title">রাজু দাদা <br> The Boss Of Math</h1>
+                        <p class="home__description">
+                            রাজু দাদার পাঠশালা |  গণিত চর্চা কেন্দ্র | সবার জন্য উন্মুক্ত | আসুন গণিত চর্চা করি,শিখি ও শিখাই |
+                        </p>
+                        <span class="home__price">Mathematics consists of proving the most obvious thing in the least obvious way. ...</span>
+
+                        <div class="home__btns">
+                            <a href="#" class="button button--gray button--small">
+                                ঘুরে আসি
+                            </a>
+
+                            <button class="button home__button">ফেইসবুক গ্রুপ থেকে</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== FEATURED ====================-->
+            <section class="featured section container" id="featured">
+                <h2 class="section__title">
+                    দাদার কোর্সসমূহ
+                </h2>
+
+                <div class="featured__container grid">
+                    <article class="featured__card">
+                        <span class="featured__tag">কোর্স</span>
+
+                        <img src="assets/img/png-clipart-white-bank-illustration-online-banking-finance-icon-white-bank-building-building-black-white-removebg-preview.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">ব্যাংক জব প্রিপারেশন</h3>
+                            <span class="featured__price">প্রিলি+রিটেন</span>
+                        </div>
+
+                        <button class="button featured__button">বিস্তারিত</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">কোর্স</span>
+
+                        <img src="assets/img/Bangladesh-Affairs-and-Mathematical-Ability-Question-and-Answer-for-BCS-Bank-University-Admission--removebg-preview.png" alt="" class="featured__img">
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">বিসিএস প্রিপারেশন</h3>
+                            <span class="featured__price">প্রিলি+রিটেন</span>
+                        </div>
+
+                        <button class="button featured__button">বিস্তারিত</button>
+                    </article>
+
+                    <article class="featured__card">
+                        <span class="featured__tag">কোর্স</span>
+
+                        <img src="assets/img/maxresdefault.jpg" alt="" class="featured__img">
+                         
+
+                        <div class="featured__data">
+                            <h3 class="featured__title">সম্মিলিত কোর্স</h3>
+                            <span class="featured__price">ব্যাংক+বিসিএস</span>
+                        </div>
+
+                        <button class="button featured__button">বিস্তারিত</button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== STORY ====================-->
+            <section class="story section container">
+                <div class="story__container grid">
+                    <div class="story__data">
+                        <h2 class="section__title story__section-title">
+                            আমাদের পথচলা
+                        </h2>
+    
+                        <h1 class="story__title">
+                            শূন্য থেকে শুরু  <br> একটি ছোট গল্প
+                        </h1>
+    
+                        <p class="story__description">
+                            আমাদের প্রতিষ্ঠানটি যাত্রা শুরু করে আজ থেকে কম করে হলেও ১২ বছর আগে |ছোট্ট একটি রুম এ গাদাগাদি করে ১০ জন ছেলে মেয়ে কে পড়াতাম |এল বাতাস এর একটু সল্পতা ছিল |কিন্তু তাদের দেখতাম তারা এটা বেশ ভালোভাবেই উপভোগ করছিলো....
+                        </p>
+    
+                        <a href="#" class="button button--small">আর্টিকেল</a>
+                    </div>
+
+                    <div class="story__images">
+                        <img src="assets/img/37609682_1872549029535055_618893384215429120_n.jpg" alt="" class="story__img">
+                        <div class="story__square"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    দাদা কে একটু জেনে আসি
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="assets/img/26169697_122665441867732_3119917507519070624_n.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">ব্যাক্তিগত জীবন</h3>
+                         
+
+                         
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/HD-wallpaper-curzon-hall-asia-bangladesh-castles-dhaka-dhaka-university-du-heritage-history-university-of-dhaka.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">পড়াশুনা</h3>
+                         
+
+                         
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/10411736_1084515284899335_8300639708008386726_n.jpg" alt="" class="products__img">
+
+                        <h3 class="products__title">গবেষণা</h3>
+                         
+
+                         
+                    </article>
+
+                     
+
+                     
+                </div>
+            </section>
+
+
+
+
+
+            <section class="products section container" id="products">
+                <h2 class="section__title">
+                    ফটো গ্যালারী
+                </h2>
+
+                <div class="products__container grid">
+                    <article class="products__card">
+                        <img src="assets/img/46524237_2184787641763022_8182428052005847040_n.jpg" alt="" class="products__img">
+
+                         
+                         
+
+                         
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/37609682_1872549029535055_618893384215429120_n.jpg" alt="" class="products__img">
+
+                         
+                         
+
+                         
+                    </article>
+
+                    <article class="products__card">
+                        <img src="assets/img/38017309_1813743438709508_3568404579231989760_n.jpg" alt="" class="products__img">
+
+                         
+        
+                         
+
+                         
+                    </article>
+
+                     
+
+                     
+                </div>
+            </section>
+
+            <!--==================== TESTIMONIAL ====================-->
+            <section class="testimonial section container">
+                <div class="testimonial__container grid">
+                    <div class="swiper testimonial-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    আমি দাদার সাবেক একজন ছাত্র |দাদার সাথে ১ বছর এর পথচলা | একজন দক্ষ গণিতজ্ঞের যেসব গুন থাকা দরকার তার সবটাই এ দাদার মাঝে আছে |উনার ব্যাক্তিত্ব অসাধারণ |
+                                </p>
+                                <h3 class="testimonial__date">মার্চ ২৭. ২০২৩</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/photo_2022-05-31_20-03-57.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">আবুল হাসনাত</span>
+                                        <span class="testimonial__perfil-detail">অ্যাসিস্ট্যান্ট প্রোগ্রামার<br>বাংলাদেশ ব্যাংক</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    আমি দাদার দ্বিতীয় ব্যাচ এর একজন.শুরুতে আমরা মাত্র ১০ জন এর ব্যাচ এ ছিলাম|দাদা প্রতিটি জিনিস খুব যত্ন সহকারে বোঝাতেন|আমি উনার প্রতি আজীবন কৃতজ্ঞ থাকবো |
+                                </p>
+                                <h3 class="testimonial__date">মার্চ ২৭. ২০২৪</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial2.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">আসমা খাতুন</span>
+                                        <span class="testimonial__perfil-detail">বিসিএস ইনফো Info (35)<br> ট্যাক্স (36)<br> অ্যাডমিন (37)<br>
+                                            সিনিয়র অফিসার (এসবিএল)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="testimonial__card swiper-slide">
+                                <div class="testimonial__quote">
+                                    <i class='bx bxs-quote-alt-left' ></i>
+                                </div>
+                                <p class="testimonial__description">
+                                    দাদার কাছে আমি ব্যাঙ্ক জন প্রিপারেশন এর জন্য ভর্তি হই |আলহামদুলিল্লাহ দেশ এর সেরা ব্যাঙ্ক এ অফিসার পদ এ জব করছি |দাদা আমাকে বেকারত্বের অভিশাপ থেকে মুক্ত করেছেন |
+                                </p>
+                                <h3 class="testimonial__date">মার্চ ২৭. ২০২৪</h3>
+        
+                                <div class="testimonial__perfil">
+                                    <img src="assets/img/testimonial3.jpg" alt="" class="testimonial__perfil-img">
+        
+                                    <div class="testimonial__perfil-data">
+                                        <span class="testimonial__perfil-name">রেজাউল করিম</span>
+                                        <span class="testimonial__perfil-detail">সিনিয়র অফিসার<br>ডাচ বাংলা ব্যাংক</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-button-next">
+                            <i class='bx bx-right-arrow-alt' ></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class='bx bx-left-arrow-alt' ></i>
+                        </div>
+                    </div>
+
+                    <div class="testimonial__images">
+                        <div class="testimonial__square"></div>
+                        <img src="assets/img/TextOnPhoto_1632812732539.png" alt="" class="testimonial__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEW ====================-->
+            <section class="new section container" id="new">
+                <h2 class="section__title">
+                    দাদার প্রকাশনী
+                </h2>
+                
+                <div class="new__container">
+                    <div class="swiper new-swiper">
+                        <div class="swiper-wrapper">
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/22104744_2060964547254399_9100021954859934575_o (1).jpg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Mental Attack</h3>
+                                     
+                                </div>
+        
+                                <button class="button new__button">ADD TO CART</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/281707355_1683495498684081_5283323424986540938_n.jpg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Precides BCS Mental Ability</h3>
+                                     
+                                </div>
+        
+                                <button class="button new__button">ADD TO CART</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/83495538_2436950026633630_5743477246010589184_n.jpg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">Songbidhan theke jiggasa</h3>
+                                     
+                                </div>
+        
+                                <button class="button new__button">ADD TO CART</button>
+                            </article>
+
+                            <article class="new__card swiper-slide">
+                                <span class="new__tag">New</span>
+        
+                                <img src="assets/img/40479958_2618093958208119_3734035186933825536_n.jpg" alt="" class="new__img">
+        
+                                <div class="new__data">
+                                    <h3 class="new__title">The Respect</h3>
+                                     
+                                </div>
+        
+                                <button class="button new__button">ADD TO CART</button>
+                            </article>                       
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== NEWSLETTER ====================-->
+            <section class="newsletter section container">
+                <div class="newsletter__bg grid">
+                    <div>
+                        <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                        <p class="newsletter__description">
+                            Don't miss out on your discounts. Subscribe to our email 
+                            newsletter to get the best offers, discounts, coupons, 
+                            gifts and much more.
+                        </p>
+                    </div>
+
+                    <form action="" class="newsletter__subscribe">
+                        <input type="email" placeholder="Enter your email" class="newsletter__input">
+                        <button class="button">
+                            SUBSCRIBE
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">Our information</h3>
+
+                    <ul class="footer__list">
+                        <li>Nilkhet</li>
+                        <li>South City Corporation Market</li>
+                        <li>01920224969</li>
+                    </ul>
+                </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">About Us</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Support Session</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Student Support</a>
+                        </li>
+                         
+                        <li>
+                            <a href="#" class="footer__link">Copy Right</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Product</h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Bcs Digest</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Mental Ability</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Sheets</a>
+                        </li>
+                        <li>
+                            <a href="#" class="footer__link">Accesories</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Social</h3>
+
+                    <ul class="footer__social">
+                        <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-facebook'></i>
+                        </a>
+
+                        <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-twitter' ></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                            <i class='bx bxl-instagram' ></i>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">&#169; Shovan. All rigths reserved</span>
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+        </a>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
